@@ -11,7 +11,7 @@ O sistema permite que professores e administradores de escolas acessem e atualiz
 Acesso a informações sobre escolas, turmas e detalhes relacionados.
 <br><p>
 ### Gestão de Dados Gerenciais: 
-<br><p> Ferramentas para gerenciar informações administrativas das instituições de ensino.
+Ferramentas para gerenciar informações administrativas das instituições de ensino.
 <br><p>
 ### Geração de Relatórios: <br><p>
 Criação e exportação de relatórios automatizados.
