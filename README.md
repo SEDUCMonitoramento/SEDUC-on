@@ -5,15 +5,16 @@ O sistema permite que professores e administradores de escolas acessem e atualiz
 <br><p>
 ## Funcionalidades:
 ### Visualização de Dados Gerais: 
-Acesso a informações sobre escolas, turmas e detalhes relacionados.
+    Acesso a informações sobre escolas, turmas e detalhes relacionados.
 <br><p>
 ### Gestão de Dados Gerenciais: 
-Ferramentas para gerenciar informações administrativas das instituições de ensino.
+    Ferramentas para gerenciar informações administrativas das instituições de ensino.
 <br><p>
 ### Geração de Relatórios: 
-Criação e exportação de relatórios automatizados.
+    Criação e exportação de relatórios automatizados.
 ### Inserção de Dados: 
-Facilita a inserção de novos dados diretamente no sistema.
+    Facilita a inserção de novos dados diretamente no sistema.
 ## Tecnologias Utilizadas:
 HTML e CSS (Bootstrap 5) para a estrutura e design responsivo.
 JavaScript para funcionalidades interativas.
+> Inicio
