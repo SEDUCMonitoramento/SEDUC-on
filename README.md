@@ -7,7 +7,6 @@ O sistema permite que professores e administradores de escolas acessem e atualiz
 <br><p>
 ## - Funcionalidades:
 ### Visualização de Dados Gerais: 
-<br><p>
 Acesso a informações sobre escolas, turmas e detalhes relacionados.
 <br><p>
 ### Gestão de Dados Gerenciais: 
