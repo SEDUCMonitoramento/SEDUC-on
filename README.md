@@ -14,6 +14,6 @@ Ferramentas para gerenciar informações administrativas das instituições de e
 Criação e exportação de relatórios automatizados.
 ### Inserção de Dados: 
 Facilita a inserção de novos dados diretamente no sistema.
-### Tecnologias Utilizadas:
+## Tecnologias Utilizadas:
 HTML e CSS (Bootstrap 5) para a estrutura e design responsivo.
 JavaScript para funcionalidades interativas.
