@@ -19,6 +19,7 @@
         }
         .card {
             transition: transform 0.3s;
+            height: 100%;
         }
         .card:hover {
             transform: scale(1.05);
@@ -32,6 +33,11 @@
         }
         .card-text {
             font-size: 1rem;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
         }
     </style>
 </head>
@@ -67,9 +73,9 @@
     </nav>
 
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card text-center">
+        <div class="row card-container">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card text-center h-100">
                     <div class="card-body">
                         <h5 class="card-title">Dados Gerais</h5>
                         <p class="card-text">Visualize escolas, turmas e informações detalhadas</p>
@@ -78,8 +84,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card text-center h-100">
                     <div class="card-body">
                         <h5 class="card-title">Dados Gerenciais</h5>
                         <p class="card-text">Gerencie informações administrativas das escolas</p>
@@ -88,8 +94,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card text-center h-100">
                     <div class="card-body">
                         <h5 class="card-title">Relatórios</h5>
                         <p class="card-text">Gere relatórios automatizados e exportáveis</p>
@@ -97,20 +103,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-        <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="card text-center h-100">
                     <div class="card-body">
                         <h5 class="card-title">Inserção de Dados</h5>
                         <p class="card-text">Atualizar dados das escolas</p>
-                        <a href="dadosgerais.html" class="btn btn-primary">Acessar</a>
+                        <a href="insercaodados.html" class="btn btn-primary">Acessar</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
