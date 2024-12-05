@@ -1,4 +1,6 @@
 # SEDUC-ON
+
+https://seducmonitoramento.github.io/SEDUC-on/diario_de_classe_2025.html 
 ## Diário de Classe Virtual
 Este repositório contém o código-fonte para o Diário de Classe Virtual, uma plataforma online voltada para a gestão escolar. <br>
 O sistema permite que professores e administradores de escolas acessem e atualizem informações relacionadas a turmas, dados administrativos e relatórios, tudo de forma centralizada e eficiente.
