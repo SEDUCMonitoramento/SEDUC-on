@@ -1,13 +1,13 @@
-// Função para carregar o arquivo JSON e preencher a tabela
-fetch('dados_das_escolas.json')
-    .then(response => response.json())  // Converte o JSON para um objeto JavaScript
+
+fetch('https://<seu-usuario>.github.io/<nome-do-repositorio>/dados_das_escolas.json')
+
+    .then(response => response.json())  
     .then(data => {
-        const tabela = document.getElementById('tabela-escolas'); // Obtém a referência da tabela
+        const tabela = document.getElementById('tabela-escolas');
         data.forEach(escola => {
             // Cria uma nova linha para cada escola
             const linha = document.createElement('tr');
 
-            // Preenche as células da linha com os dados da escola
             linha.innerHTML = `
                 <td>${escola.cod_rh}</td>
                 <td>${escola.cod}</td>
