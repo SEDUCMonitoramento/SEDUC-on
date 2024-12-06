@@ -86,28 +86,47 @@
                     <th>Secretário</th>
                 </tr>
             </thead>
-            <tbody>
-                <!-- Substituir abaixo pelos dados dinamicamente -->
-                <tr>
-                    <td>01</td>
-                    <td>2401</td>
-                    <td>EM SEMENTES DO BEM</td>
-                    <td>35010459</td>
-                    <td>Rua Jorge Mansour Costa, S/N, Bairro Indaiá</td>
-                    <td>11260015</td>
-                    <td>13 33132759</td>
-                    <td>010459</td>
-                    <td>dir.sementesdobem@seducbertioga.com.br</td>
-                    <td>assist.sementesdobem@seducbertioga.com.br</td>
-                    <td>coord.sementesdobem@seducbertioga.com.br</td>
-                    <td>sec.sementesdobem@seducbertioga.com.br</td>
-                </tr>
-                <!-- Adicionar mais linhas conforme necessário -->
+            <tbody id="tabela-dados">
+                <!-- As linhas da tabela serão preenchidas aqui -->
             </tbody>
         </table>
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Função para carregar e preencher os dados na tabela
+function preencherTabela() {
+    // Caminho do arquivo JSON (certifique-se de que o arquivo está no mesmo diretório)
+    fetch('dados_das_escolas.json')
+        .then(response => response.json())
+        .then(dados => {
+            const tabela = document.getElementById('tabela-dados');
+            dados.forEach(escola => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${escola.cod_rh}</td>
+                    <td>${escola.cod}</td>
+                    <td>${escola.escola}</td>
+                    <td>${escola.inep}</td>
+                    <td>${escola.endereco}</td>
+                    <td>${escola.cep}</td>
+                    <td>${escola.telefone}</td>
+                    <td>${escola.sed_ue}</td>
+                    <td>${escola.direcao}</td>
+                    <td>${escola.assistente_direcao}</td>
+                    <td>${escola.assistente_coordenacao}</td>
+                    <td>${escola.secretario}</td>
+                `;
+                tabela.appendChild(row);
+            });
+        })
+        .catch(error => {
+            console.error('Erro ao carregar os dados:', error);
+        });
+}
+
+// Preencher a tabela ao carregar a página
+document.addEventListener('DOMContentLoaded', preencherTabela);
+</script>
 </body>
 </html>
