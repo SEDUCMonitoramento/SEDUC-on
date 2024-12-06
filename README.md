@@ -7,6 +7,12 @@ O sistema permite que professores e administradores de escolas acessem e atualiz
 <br><p>
 ## Funcionalidades:
 <br><p>
+### Demanda anual:
+    Estruturar a relação de escolas e turmas do próximo ano.
+<br><p>
+### Inserção de Dados: 
+    Facilita a inserção de novos dados diretamente no sistema.
+<br><p>
 ### Visualização de Dados Gerais: 
     Acesso a informações sobre escolas, turmas e detalhes relacionados.
 <br><p>
@@ -16,9 +22,7 @@ O sistema permite que professores e administradores de escolas acessem e atualiz
 ### Geração de Relatórios: 
     Criação e exportação de relatórios automatizados.
 <br><p>
-### Inserção de Dados: 
-    Facilita a inserção de novos dados diretamente no sistema.
-<br><p>
+
 ## Tecnologias Utilizadas:
 HTML e CSS (Bootstrap 5) para a estrutura e design responsivo.
 JavaScript para funcionalidades interativas.
