@@ -1,4 +1,3 @@
-
 fetch('https://<seu-usuario>.github.io/<nome-do-repositorio>/dados_das_escolas.json')
 
     .then(response => response.json())  
