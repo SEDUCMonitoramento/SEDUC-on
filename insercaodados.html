@@ -123,24 +123,65 @@
             <button type="submit" class="btn btn-primary">Salvar Dados</button>
         </form>
     </div>
+
+    <h2 class="text-center mt-5">Tabela de Escolas</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Código RH</th>
+                <th scope="col">Código</th>
+                <th scope="col">Escola</th>
+                <th scope="col">INEP</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">CEP</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">SED UE</th>
+                <th scope="col">E-mail Diretor</th>
+                <th scope="col">E-mail Assistente Direção</th>
+                <th scope="col">E-mail Assistente Coordenação</th>
+                <th scope="col">E-mail Secretário</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaEscolas">
+            <!-- Dados das escolas serão inseridos aqui -->
+        </tbody>
+    </table>
 </div>
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        console.log('Página de Dados Gerenciais carregada');
-
-        // Função para capturar os dados do formulário e enviar para a tabela
+        // Função para capturar os dados do formulário e adicionar na tabela
         document.getElementById('formDadosEscola').addEventListener('submit', function(event) {
-            event.preventDefault();  // Evita o envio do formulário
+            event.preventDefault();  // Impede o envio do formulário
 
             // Captura os dados do formulário
             const formData = new FormData(this);
             const escolaData = Object.fromEntries(formData.entries());
 
-            // Exibe os dados no console (pode ser substituído para outra ação, como salvar em um banco)
-            console.log(escolaData);
+            // Cria uma nova linha da tabela com os dados inseridos
+            const tabelaEscolas = document.getElementById('tabelaEscolas');
+            const novaLinha = document.createElement('tr');
+            
+            novaLinha.innerHTML = `
+                <td>${escolaData.cod_rh}</td>
+                <td>${escolaData.cod}</td>
+                <td>${escolaData.escola}</td>
+                <td>${escolaData.inep}</td>
+                <td>${escolaData.endereco}</td>
+                <td>${escolaData.cep}</td>
+                <td>${escolaData.telefone}</td>
+                <td>${escolaData.sed_ue}</td>
+                <td>${escolaData.direcao}</td>
+                <td>${escolaData.assistente_direcao}</td>
+                <td>${escolaData.assistente_coordenacao}</td>
+                <td>${escolaData.secretario}</td>
+            `;
+            
+            // Adiciona a nova linha na tabela
+            tabelaEscolas.appendChild(novaLinha);
 
-            // Aqui você pode enviar os dados para o servidor ou atualizar a tabela na página com esses dados
+            // Limpa o formulário
+            this.reset();
 
             alert('Dados da escola salvos com sucesso!');
         });
