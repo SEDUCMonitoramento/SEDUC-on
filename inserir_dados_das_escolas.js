@@ -1,4 +1,4 @@
-fetch('https://<seu-usuario>.github.io/<nome-do-repositorio>/dados_das_escolas.json')
+https://raw.githubusercontent.com/SEDUCMonitoramento/SEDUC-on/index/dados_das_escolas.json
 
     .then(response => response.json())  
     .then(data => {
