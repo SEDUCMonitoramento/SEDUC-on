@@ -93,40 +93,6 @@
     </div>
 </div>
 
-<script>
-// Função para carregar e preencher os dados na tabela
-function preencherTabela() {
-    // Caminho do arquivo JSON (certifique-se de que o arquivo está no mesmo diretório)
-    fetch('dados_das_escolas.json')
-        .then(response => response.json())
-        .then(dados => {
-            const tabela = document.getElementById('tabela-dados');
-            dados.forEach(escola => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${escola.cod_rh}</td>
-                    <td>${escola.cod}</td>
-                    <td>${escola.escola}</td>
-                    <td>${escola.inep}</td>
-                    <td>${escola.endereco}</td>
-                    <td>${escola.cep}</td>
-                    <td>${escola.telefone}</td>
-                    <td>${escola.sed_ue}</td>
-                    <td>${escola.direcao}</td>
-                    <td>${escola.assistente_direcao}</td>
-                    <td>${escola.assistente_coordenacao}</td>
-                    <td>${escola.secretario}</td>
-                `;
-                tabela.appendChild(row);
-            });
-        })
-        .catch(error => {
-            console.error('Erro ao carregar os dados:', error);
-        });
-}
-
-// Preencher a tabela ao carregar a página
-document.addEventListener('DOMContentLoaded', preencherTabela);
-</script>
+<script> scr="inserir_dados_das_escolas.js" </script>
 </body>
 </html>
